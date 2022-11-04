@@ -51,15 +51,22 @@ h3 {
   line-height: 150%;
   color: #44526C;
 }
+a {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 145%;
+  color: #44526C;
+  text-decoration: none;
+}
 h3:not(:first-of-type) {
   margin-top: 21px;
 }
 ul {
   list-style-position: inside;
 }
-ul:not(only-of-type) {
+tr:not(:last-of-type) ul {
   list-style-type: none;
 }
-ul:not(only-of-type) li::before {
+tr:not(:last-of-type) li::before {
   content: '–– ';
 }
